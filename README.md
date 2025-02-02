@@ -16,7 +16,10 @@ Demo of user CRUD with typescript mysql and typeorm
 
 # API Route Sample:
 Create a User:
-    - Endpoint: POST /v1/users
+    
+    - Endpoint: /v1/users
+
+    - Method: POST
     
     - Authorization (Token for Admin role): 
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczODQ4ODYzOX0.zdSFf6uoirEbKH2LNuvQB6lth4uH_kmK8_-SjjW1BNU
