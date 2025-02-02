@@ -11,7 +11,7 @@
     "migration:generate": "npm run typeorm migration:generate -- -d src/data-source.ts src/migration/MigrationName",
     "migration:run": "npm run typeorm migration:run -- -d src/data-source.ts",
     "dev": "npm run migration:run && npm run demo",
-    "test": "jest --runInBand"
+    "test": "NODE_ENV=test jest --runInBand"
   },
   "keywords": [],
   "author": "",

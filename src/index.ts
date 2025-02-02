@@ -17,14 +17,10 @@ app.use(
   })
 );
 
-// middleware
 app.use(express.json());
 
 app.use("/v1", routes);
-
 app.use(errorMiddleware);
-// Export `app` for testing
-export default app;
 
 if (process.env.NODE_ENV !== "test") {
   connectDatabase()
@@ -37,3 +33,5 @@ if (process.env.NODE_ENV !== "test") {
       console.error("Server startup failed due to DB connection error:", err);
     });
 }
+
+export default app; // This is required for Jest tests

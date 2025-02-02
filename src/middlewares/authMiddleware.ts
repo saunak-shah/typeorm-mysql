@@ -22,14 +22,6 @@ export const authenticate = (req: any, res: Response, next: NextFunction) => {
     const decoded = verifyToken(token); // Verify token and extract payload
 
     req.user = decoded; // Attach user data to the request object
-
-    // Extract `id` from request (body, params, or query)
-    const id: number = parseInt(req.body?.id ?? req.params?.id ?? req.query?.id);
-
-    if (id && id !== parseInt(req.user.userId)) {
-      return next(new UnauthorizedException('Unauthorized User.', ErrorCode.UNAUTHORIZED));
-    }
-
     next(); // Proceed to the next middleware
   } catch (error) {
     next(new InternalException('Internal server error.', error, ErrorCode.INTERNAL_EXCEPTION));

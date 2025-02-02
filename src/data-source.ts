@@ -10,7 +10,7 @@ export const AppDataSource = new DataSource({
   username: DB_USER,
   password: DB_PASSWORD,
   database: DB_NAME,
-  entities: ["*"], // Add all entity classes
+  entities: [Users], // Add all entity classes
   migrations: ["src/migration/*.ts"], // Path to migration files
   synchronize: false, // Set `false` in production & use migrations
   logging: true, // Enable logging in development

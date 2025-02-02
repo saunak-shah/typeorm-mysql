@@ -22,12 +22,12 @@ Create a User:
     - Method: POST
     
     - Authorization (Token for Admin role): 
-    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczODQ4ODYzOX0.zdSFf6uoirEbKH2LNuvQB6lth4uH_kmK8_-SjjW1BNU
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczODUyNjExOX0.4D81-FzsjTyjHunZMr_UuUnXhQYzBCHbtTabPoGoFtE
     
     - Payload: 
     {
-        "name": "Test user",
-        "email": "test@gmail.com",
+        "name": "Admin user",
+        "email": "admin@gmail.com",
         "role": "Admin"
     }
 
