@@ -15,10 +15,14 @@ Demo of user CRUD with typescript mysql and typeorm
 3. start the project by "npm run dev" (Migration file will auto run)
 
 # API Route Sample:
-1. Users Create:
-    Path - /v1/users
-    Authorization - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczODQ4ODYzOX0.zdSFf6uoirEbKH2LNuvQB6lth4uH_kmK8_-SjjW1BNU
-    Payload - {
+Create a User:
+    - Endpoint: POST /v1/users
+    
+    - Authorization (Token for Admin role): 
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczODQ4ODYzOX0.zdSFf6uoirEbKH2LNuvQB6lth4uH_kmK8_-SjjW1BNU
+    
+    - Payload: 
+    {
         "name": "Test user",
         "email": "test@gmail.com",
         "role": "Admin"
